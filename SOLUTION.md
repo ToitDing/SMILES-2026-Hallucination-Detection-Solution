@@ -225,14 +225,3 @@ Selective layer sampling performed better.
 * Geometric features provide strong auxiliary signal
 * Classical ML models outperform neural probes in low-data regimes
 * Careful threshold tuning improves final performance
-
----
-
-## 5. Future Improvements
-
-* Use attention-weighted pooling instead of uniform pooling
-* Incorporate token-level entropy or log-probabilities
-* Train a lightweight transformer probe instead of static classifier
-* Explore contrastive representations between correct vs hallucinated outputs
-
----
