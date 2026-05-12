@@ -1,4 +1,4 @@
-# SMILES-2026 Hallucination Detection
+# 🔍 SMILES-2026 Hallucination Detection
 
 Detect whether a small language
 model's answer is *hallucinated* (fabricated) or *truthful* using the model's
@@ -38,6 +38,7 @@ SMILES-HALLUCINATION-DETECTION/
 ├── evaluate.py            # Evaluation loop, metrics, summary table, JSON output
 │
 ├── requirements.txt       # Python dependencies
+└── LICENSE
 ```
 
 
@@ -118,3 +119,25 @@ For each fold `evaluate.py` reports four numbers:
 
 Results are averaged across folds (if using k-fold) and saved to
 `results.json`.
+
+
+# What is expected from the applicant of SMILES-2026 ?
+
+**Q1:** What must the applicant submit in the application form ?<br>
+**A1:** Submit: 
+1. A link to your Github repository
+2. A link to your `predictions.csv` publicly available file on some cloud storage
+
+**Q2:** What the applicants must include in the repository ?<br>
+**A2:** Your repository must contain: 
+1. `results.json` - produced by the official `solution.py`
+2. Report file in Markdown format `SOLUTION.md`. 
+
+**Q3:** Report requirements (`SOLUTION.md`)<br>
+**A3:** Your report must include:<br>
+- Reproducibility instructions: exact commands to run your solution and acquire the same `predictions.csv`, required environment (if any), any important implementation details needed to reproduce your result.
+- Final solution description: What components you modified ? What your final approach is ? Why you made these choices ? What contributed most to improving the metric ?
+- Experiments and failed attempts: What ideas you tried but did not include in the final solution ? Why they did not work or were discarded ?
+
+**Q4:** Reproducibility<br>
+**A4:** The repository must be self-contained and runnable with the provided `solution.py` file. Your solution must not require changes to the fixed infrastructure files. Running `solution.py` must generate your submitted `predictions.csv`.
