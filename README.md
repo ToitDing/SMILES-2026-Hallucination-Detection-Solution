@@ -38,7 +38,6 @@ SMILES-HALLUCINATION-DETECTION/
 ├── evaluate.py            # Evaluation loop, metrics, summary table, JSON output
 │
 ├── requirements.txt       # Python dependencies
-└── LICENSE
 ```
 
 
